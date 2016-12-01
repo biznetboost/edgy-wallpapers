@@ -9,7 +9,12 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <title>Edgy Wallpapers</title>
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.min.js"></script>
@@ -21,13 +26,36 @@
     
     <!-- App Script -->
     <!-- TODO: Move to separate javascript file -->
-    <script lang="javascript">
+    <script type="text/javascript">
     	var app = angular.module('wallpaper', ['ngMaterial', 'ngRoute']);
     </script>
   </head>
 
   <body ng-app="wallpaper" ng-cloak>
-    <input ng-model="name" name="name" type="text" />
-    <div>Hello, {{name}}!</div>
+    <md-content>
+    	<md-toolbar>
+    		<div class="md-toolbar-tools">
+    			<md-button class="md-icon-button" aria-label="menu">
+    				<md-icon md-font-set="material-icons">menu</md-icon>
+    			</md-button>
+    			<h2>
+    				<span>Edgy Wallpapers</span>
+    			</h2>
+    			<span flex></span>
+    			<md-button class="md-icon-button" aria-label="menu">
+    				<md-icon md-font-set="material-icons">whatshot</md-icon>
+    			</md-button>
+    			<md-button class="md-icon-button" aria-label="menu">
+    				<md-icon md-font-set="material-icons">share</md-icon>
+    			</md-button>
+    			<md-button class="md-icon-button" aria-label="menu">
+    				<md-icon md-font-set="material-icons">file-download</md-icon>
+    			</md-button>
+    			<md-button class="md-icon-button" aria-label="menu">
+    				<md-icon md-font-set="material-icons">thumbs-up</md-icon>
+    			</md-button>
+    		</div>
+    	</md-toolbar>
+    </md-content>
   </body>
 </html>
